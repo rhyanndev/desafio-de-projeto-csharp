@@ -15,16 +15,8 @@ Console.WriteLine("Seja bem-vindo ao sistema de estacionamento!\n");
 Console.WriteLine("Digite o preço inicial:");
 precoInicial = Convert.ToDecimal(Console.ReadLine());
 
-
 Console.WriteLine("Digite o preço por hora:");
 precoPorHora = Convert.ToDecimal(Console.ReadLine());
-
-
-// Console.WriteLine("Digite uma opção:\n");
-// Console.WriteLine("1 - Cadastrar veículo\n");
-// Console.WriteLine("2 - Remover veículo\n");
-// Console.WriteLine("3 - Listar veículo\n");
-// Console.WriteLine("4 - Encerrar\n");
 
 Estacionamento es = new Estacionamento(precoInicial, precoPorHora);
 

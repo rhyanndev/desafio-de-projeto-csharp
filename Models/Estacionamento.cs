@@ -4,17 +4,13 @@ using System.ComponentModel;
 using System.Linq;
 using System.Threading.Tasks;
 
-
 namespace estacionamentoProjeto.Models
 {
     public class Estacionamento
     {
         private decimal precoInicial = 0;
         private decimal precoPorHora = 0;
-
         private List<string> veiculos = new List<string>();
-
-
         public Estacionamento(decimal precoInicial, decimal precoPorHora){
             this.precoInicial = precoInicial;
             this.precoPorHora = precoPorHora;
@@ -43,10 +39,7 @@ namespace estacionamentoProjeto.Models
                 Console.Clear();
 
             }
-
-
         }
-
         public void RemoverVeiculo(){
             
             Console.WriteLine("Digite a placa do veículo para remover\n");
@@ -62,11 +55,6 @@ namespace estacionamentoProjeto.Models
 
                 Console.WriteLine("Digite a quantidade de horas que o veículo permaneceu estacionado\n");
 
-                // TODO: Pedir para o usuário digitar a quantidade de horas 
-                // TODO: Realizar o seguinte cálculo: "precoInicial + precoPorHora * horas" para a variável valor
-                //IMPLEMENTE AQUI
-
-              
                 int horas = int.Parse(Console.ReadLine()!);
 
                 decimal valorTotal = precoInicial + (precoPorHora * horas);
@@ -74,21 +62,17 @@ namespace estacionamentoProjeto.Models
 
                 Console.WriteLine($"O veículo {placa} foi removido e o preço total foi de: R$ {valorTotal}");
             
-                // TODO: Remover a placa dirigida da lista de veículos 
-                // *IMPLEMENTE AQUI*
-            
-            }
-            else
-            {
+                }
+                else
+                    {
                 Console.WriteLine("Desculpe, esse veículo não está estacionado aqui. Confira se...");
-            }
+                }
             }
             else{
                 Console.WriteLine("Você não digitou nada ou digitou apenas espaços em branco.");
                 Thread.Sleep(3000);
                 Console.Clear();
-            }
-            
+            }    
         }
 
         public void ListarVeiculos(){
@@ -96,10 +80,10 @@ namespace estacionamentoProjeto.Models
             if(veiculos.Any()){
                 Console.WriteLine("Listando veículos cadastrados:\n");
 
-            foreach(string item in veiculos){
-                Console.WriteLine($"Esse foi o veículo cadastrado: {item}\n");
-            }
+                foreach(string item in veiculos){
+                    Console.WriteLine($"Esse foi o veículo cadastrado: {item}\n");
                 }
+            }
             else{             
                 Console.WriteLine("Não há veículos estacionados.");
             }
