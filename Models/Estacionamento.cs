@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Linq;
 using System.Threading.Tasks;
 
+
 namespace estacionamentoProjeto.Models
 {
     public class Estacionamento
@@ -23,74 +24,86 @@ namespace estacionamentoProjeto.Models
             
             //TODO: Pedir para o usuário digitar uma placa (ReadLine) e adicionar na lista "veículos"
             //Implemente aqui:
-            Console.WriteLine("Digite a placa do veículo para estacionar");
+            Console.WriteLine("Digite a placa do veículo para estacionar\n");
 
-            string placacarro;
-            placacarro = Console.ReadLine()!;
+            string placa = Console.ReadLine()!;
 
-            Console.WriteLine($"Você digitou: {placacarro}");
+            if (!string.IsNullOrEmpty(placa))
+            {
+                Console.WriteLine("Você digitou: " + placa);
+                veiculos.Add(placa);
+                Console.WriteLine("Veículo cadastrado!");
+                Thread.Sleep(3000);
+                Console.Clear();
+            }
+            else
+            {
+                Console.WriteLine("Você não digitou nada ou digitou apenas espaços em branco.");
+                Thread.Sleep(3000);
+                Console.Clear();
 
-            Console.WriteLine("Veículo cadastrado!");
+            }
 
-            veiculos.Add(placacarro);
 
         }
 
         public void RemoverVeiculo(){
             
-            Console.WriteLine("Digite a placa do veículo para remover");
+            Console.WriteLine("Digite a placa do veículo para remover\n");
 
             //TODO: Pedir para o usuário digitar a placa e armazenar na variável placa
 
-            string placa = "";
+            string placa = Console.ReadLine()!;
 
-            //Verifica se o veículo existe
-            if(veiculos.Any(x => x.ToUpper() == placa.ToUpper())){
+            if (!string.IsNullOrEmpty(placa)){
 
-                Console.WriteLine("Digite a quantidade de horas que o veículo permaneceu estacionado");
+                //Verifica se o veículo existe
+                if(veiculos.Any(x => x.ToUpper() == placa.ToUpper())){
+
+                Console.WriteLine("Digite a quantidade de horas que o veículo permaneceu estacionado\n");
 
                 // TODO: Pedir para o usuário digitar a quantidade de horas 
                 // TODO: Realizar o seguinte cálculo: "precoInicial + precoPorHora * horas" para a variável valor
                 //IMPLEMENTE AQUI
 
-                int horas = 0;
-                horas = int.Parse(Console.ReadLine());
+              
+                int horas = int.Parse(Console.ReadLine()!);
 
                 decimal valorTotal = precoInicial + (precoPorHora * horas);
+                veiculos.Remove(placa);
 
+                Console.WriteLine($"O veículo {placa} foi removido e o preço total foi de: R$ {valorTotal}");
+            
                 // TODO: Remover a placa dirigida da lista de veículos 
                 // *IMPLEMENTE AQUI*
-                veiculos.Remove(placa);
-                Console.WriteLine($"O veículo {placa} foi removido e o preço total foi de: R$ {valorTotal}");
-
-
-
-
+            
             }
             else
             {
                 Console.WriteLine("Desculpe, esse veículo não está estacionado aqui. Confira se...");
             }
-
+            }
+            else{
+                Console.WriteLine("Você não digitou nada ou digitou apenas espaços em branco.");
+                Thread.Sleep(3000);
+                Console.Clear();
+            }
+            
         }
 
         public void ListarVeiculos(){
 
             if(veiculos.Any()){
-
-
-            Console.WriteLine("Listando veículos cadastrados:\n");
+                Console.WriteLine("Listando veículos cadastrados:\n");
 
             foreach(string item in veiculos){
-
                 Console.WriteLine($"Esse foi o veículo cadastrado: {item}\n");
             }
                 }
-            else{
-                
+            else{             
                 Console.WriteLine("Não há veículos estacionados.");
             }
-
+         
         }
     
     }

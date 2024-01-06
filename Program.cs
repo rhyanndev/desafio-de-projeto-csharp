@@ -31,41 +31,46 @@ Estacionamento es = new Estacionamento(precoInicial, precoPorHora);
 string opcao = string.Empty;
 bool exibirMenu = true;
 
-void exibirMenu(){
-
-
-
+while(exibirMenu)
+{
+    Console.WriteLine("*******************************");
     Console.WriteLine("Digite uma opção:\n");
     Console.WriteLine("1 - Cadastrar veículo\n");
     Console.WriteLine("2 - Remover veículo\n");
     Console.WriteLine("3 - Listar veículo\n");
     Console.WriteLine("4 - Encerrar\n");
+    Console.WriteLine($"Preço Inicial atribuído: R$ {precoInicial}\nPreço por hora atribuído R$ {precoPorHora}");
+    Console.WriteLine("*******************************");
 
-    int numero = int.Parse(Console.ReadLine());
+    switch(Console.ReadLine())
 
-
-    switch(numero)
     {
-        case 1:
+        case "1":
             es.AdicionarVeiculo();
         break;
-        case 2:
+
+        case "2":
             es.RemoverVeiculo();
         break;
-        case 3:
+
+        case "3":
             es.ListarVeiculos();
         break;
 
+        case "4":
+            exibirMenu = false;
+        break;
+
         default:
-            Console.WriteLine("Número não reconhecido.");
+            Console.WriteLine("Opção inválida");
         break;
     }
 
-
-
+    Console.WriteLine("Pressione uma tecla para continuar");
 }
 
-exibirMenu();
+
+
 
 
 
