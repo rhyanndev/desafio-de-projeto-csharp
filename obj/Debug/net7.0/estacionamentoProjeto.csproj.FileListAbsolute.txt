@@ -1,0 +1,15 @@
+C:\Users\Loja\Desktop\PROJETOS PESSOAIS\desafio-sistema-de-estacionamento\estacionamentoProjeto\bin\Debug\net7.0\estacionamentoProjeto.exe
+C:\Users\Loja\Desktop\PROJETOS PESSOAIS\desafio-sistema-de-estacionamento\estacionamentoProjeto\bin\Debug\net7.0\estacionamentoProjeto.deps.json
+C:\Users\Loja\Desktop\PROJETOS PESSOAIS\desafio-sistema-de-estacionamento\estacionamentoProjeto\bin\Debug\net7.0\estacionamentoProjeto.runtimeconfig.json
+C:\Users\Loja\Desktop\PROJETOS PESSOAIS\desafio-sistema-de-estacionamento\estacionamentoProjeto\bin\Debug\net7.0\estacionamentoProjeto.dll
+C:\Users\Loja\Desktop\PROJETOS PESSOAIS\desafio-sistema-de-estacionamento\estacionamentoProjeto\bin\Debug\net7.0\estacionamentoProjeto.pdb
+C:\Users\Loja\Desktop\PROJETOS PESSOAIS\desafio-sistema-de-estacionamento\estacionamentoProjeto\obj\Debug\net7.0\estacionamentoProjeto.csproj.AssemblyReference.cache
+C:\Users\Loja\Desktop\PROJETOS PESSOAIS\desafio-sistema-de-estacionamento\estacionamentoProjeto\obj\Debug\net7.0\estacionamentoProjeto.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Loja\Desktop\PROJETOS PESSOAIS\desafio-sistema-de-estacionamento\estacionamentoProjeto\obj\Debug\net7.0\estacionamentoProjeto.AssemblyInfoInputs.cache
+C:\Users\Loja\Desktop\PROJETOS PESSOAIS\desafio-sistema-de-estacionamento\estacionamentoProjeto\obj\Debug\net7.0\estacionamentoProjeto.AssemblyInfo.cs
+C:\Users\Loja\Desktop\PROJETOS PESSOAIS\desafio-sistema-de-estacionamento\estacionamentoProjeto\obj\Debug\net7.0\estacionamentoProjeto.csproj.CoreCompileInputs.cache
+C:\Users\Loja\Desktop\PROJETOS PESSOAIS\desafio-sistema-de-estacionamento\estacionamentoProjeto\obj\Debug\net7.0\estacionamentoProjeto.dll
+C:\Users\Loja\Desktop\PROJETOS PESSOAIS\desafio-sistema-de-estacionamento\estacionamentoProjeto\obj\Debug\net7.0\refint\estacionamentoProjeto.dll
+C:\Users\Loja\Desktop\PROJETOS PESSOAIS\desafio-sistema-de-estacionamento\estacionamentoProjeto\obj\Debug\net7.0\estacionamentoProjeto.pdb
+C:\Users\Loja\Desktop\PROJETOS PESSOAIS\desafio-sistema-de-estacionamento\estacionamentoProjeto\obj\Debug\net7.0\estacionamentoProjeto.genruntimeconfig.cache
+C:\Users\Loja\Desktop\PROJETOS PESSOAIS\desafio-sistema-de-estacionamento\estacionamentoProjeto\obj\Debug\net7.0\ref\estacionamentoProjeto.dll
